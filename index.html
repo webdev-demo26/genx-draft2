@@ -1,0 +1,3194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      GeneX Commercialization Summit 2027 | Melbourne, September 20–22, 2027
+    </title>
+    <meta
+      name="description"
+      content="Connecting Academic Discovery with Biopharma Scale."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=Figtree:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #08142b;
+        --navy2: #0d1f42;
+        --cobalt: #3d6bff;
+        --cobalt-d: #2a52d6;
+        --cobalt-l: #b9cbff;
+        --amber: #ffb84a;
+        --paper: #f2f5fa;
+        --ink: #0a1a33;
+        --muted: #566985;
+        --line: #dce3ee;
+        --bs-body-font-family: "Figtree", system-ui, sans-serif;
+        --bs-body-color: var(--ink);
+        --bs-link-color: var(--cobalt-d);
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 84px;
+      }
+      body {
+        font-size: 1.05rem;
+        line-height: 1.65;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      .brand-name {
+        font-family: "Schibsted Grotesk", "Figtree", sans-serif;
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+      }
+      :focus-visible {
+        outline: 3px solid var(--amber);
+        outline-offset: 3px;
+      }
+      .band {
+        padding: 5.5rem 0;
+      }
+      .band-light {
+        background: var(--paper);
+        color: var(--ink);
+      }
+      .band-white {
+        background: #fff;
+      }
+      .band-dark {
+        background: var(--navy);
+        color: #e7edfb;
+      }
+      .band-dark2 {
+        background: var(--navy2);
+        color: #e7edfb;
+      }
+      .band-dark h2,
+      .band-dark h3,
+      .band-dark2 h2,
+      .band-dark2 h3 {
+        color: #fff;
+      }
+      .h-sec {
+        font-size: clamp(1.9rem, 3.8vw, 3rem);
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+      }
+      .btn {
+        font-weight: 600;
+        border-radius: 999px;
+        padding: 0.8rem 1.6rem;
+      }
+      .btn-cobalt {
+        background: var(--cobalt);
+        color: #fff;
+        border: 0;
+      }
+      .btn-cobalt:hover {
+        background: var(--cobalt-d);
+        color: #fff;
+      }
+      .btn-amber {
+        background: var(--amber);
+        color: var(--navy);
+        border: 0;
+      }
+      .btn-amber:hover {
+        background: #ffc87a;
+        color: var(--navy);
+      }
+      .btn-ghost {
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        color: #fff;
+      }
+      .btn-ghost:hover {
+        background: #fff;
+        color: var(--navy);
+      }
+
+      /* Navbar: light, always visible */
+      .navbar {
+        background: rgba(255, 255, 255, 0.96);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--line);
+      }
+      .navbar .brand-name {
+        font-weight: 800;
+        font-size: 1.25rem;
+        color: var(--ink);
+      }
+      .brand-mark {
+        width: 34px;
+        height: 34px;
+        margin-right: 0.6rem;
+      }
+      .navbar .nav-link {
+        color: var(--ink);
+        font-weight: 600;
+        padding: 0.5rem 0.9rem;
+        border-radius: 999px;
+      }
+      .navbar .nav-link:hover,
+      .navbar .nav-link.active {
+        background: #e8eeff;
+        color: var(--cobalt-d);
+      }
+
+      /* Hero (dark, background image) */
+      .hero {
+        position: relative;
+        isolation: isolate;
+        color: #fff;
+        overflow: hidden;
+        padding: 5.5rem 0 6rem;
+        min-height: calc(100svh - 72px);
+        display: flex;
+        align-items: center;
+      }
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -2;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: linear-gradient(
+          100deg,
+          rgba(5, 14, 34, 0.82),
+          rgba(5, 14, 34, 0.35)
+        );
+      }
+      .hero h1 {
+        font-size: clamp(2.5rem, 6.4vw, 5rem);
+        font-weight: 800;
+      }
+      .tagline {
+        font-size: clamp(1.15rem, 2vw, 1.5rem);
+        color: var(--cobalt-l);
+        max-width: 32ch;
+        margin-top: 1.2rem;
+      }
+      .event-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(14px);
+        border-radius: 1.4rem;
+        padding: 2rem;
+      }
+      .event-card dt {
+        font-weight: 600;
+        color: var(--amber);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+      .event-card dd {
+        font-size: 1.35rem;
+        font-weight: 600;
+        margin: 0.2rem 0 1.4rem;
+        font-family: "Schibsted Grotesk", sans-serif;
+      }
+      .rise {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+      }
+      .rise.d1 {
+        animation-delay: 0.15s;
+      }
+      .rise.d2 {
+        animation-delay: 0.3s;
+      }
+      @keyframes rise {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .rise {
+          animation: none;
+          opacity: 1;
+          transform: none;
+        }
+        html {
+          scroll-behavior: auto;
+        }
+      }
+
+      /* Overview (light) */
+      .pull-big {
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-size: clamp(1.4rem, 2.8vw, 2.1rem);
+        font-weight: 700;
+        line-height: 1.28;
+        max-width: 34ch;
+        margin: 1.2rem auto 0;
+      }
+      .overview-cols {
+        column-gap: 3rem;
+      }
+      @media (min-width: 768px) {
+        .overview-cols {
+          columns: 2;
+        }
+      }
+      .overview-cols p {
+        break-inside: avoid;
+      }
+
+      /* Leadership (dark) */
+      .portrait {
+        position: relative;
+        max-width: 380px;
+        margin-inline: auto;
+      }
+      .portrait::before {
+        content: "";
+        position: absolute;
+        inset: 18px -18px -18px 18px;
+        border: 2px solid var(--amber);
+        border-radius: 1.4rem;
+        z-index: 0;
+      }
+      .chair-photo {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 1.4rem;
+      }
+      .chair-label {
+        color: var(--amber);
+        font-weight: 700;
+      }
+      .chair-name {
+        font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+        font-weight: 800;
+      }
+      .chair-title {
+        color: var(--cobalt-l);
+        font-style: italic;
+      }
+      .role-card {
+        background: rgba(255, 255, 255, 0.06);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 1rem;
+        padding: 1.1rem 1.2rem;
+      }
+      .role-card strong {
+        color: #fff;
+        display: block;
+      }
+
+      /* Topics (light, vertical tabs) */
+      .topic-nav {
+        gap: 0.4rem;
+      }
+      .topic-nav .nav-link {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        text-align: left;
+        color: var(--ink);
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 0.9rem;
+        padding: 0.8rem 1rem;
+        font-weight: 600;
+        line-height: 1.25;
+      }
+      .topic-nav .nav-link .tn {
+        flex: 0 0 2rem;
+        height: 2rem;
+        border-radius: 0.55rem;
+        display: grid;
+        place-items: center;
+        background: #e8eeff;
+        color: var(--cobalt-d);
+        font-weight: 800;
+      }
+      .topic-nav .nav-link.active {
+        background: var(--navy);
+        color: #fff;
+        border-color: var(--navy);
+      }
+      .topic-nav .nav-link.active .tn {
+        background: var(--amber);
+        color: var(--navy);
+      }
+      @media (max-width: 991.98px) {
+        .topic-nav {
+          flex-direction: row !important;
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          padding-bottom: 0.6rem;
+          scroll-snap-type: x mandatory;
+        }
+        .topic-nav .nav-link {
+          flex: 0 0 auto;
+          white-space: nowrap;
+          scroll-snap-align: start;
+        }
+      }
+      .topic-panel {
+        position: relative;
+        background: #fff;
+        border: 1px solid var(--line);
+        border-radius: 1.3rem;
+        padding: clamp(1.3rem, 3vw, 2.3rem);
+        overflow: hidden;
+      }
+      .topic-big {
+        position: absolute;
+        right: 1.2rem;
+        top: -1.2rem;
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 9rem;
+        color: #eef2fb;
+        line-height: 1;
+        z-index: 0;
+        pointer-events: none;
+      }
+      .topic-panel > *:not(.topic-big) {
+        position: relative;
+        z-index: 1;
+      }
+      .topic-panel h3 {
+        font-size: clamp(1.5rem, 2.6vw, 2.1rem);
+        font-weight: 800;
+        margin-bottom: 1.2rem;
+        max-width: 22ch;
+      }
+      .topic-list li {
+        margin-bottom: 0.7rem;
+      }
+      .proof,
+      .why {
+        padding: 1rem 1.1rem;
+        border-radius: 0.8rem;
+        font-size: 0.97rem;
+      }
+      .proof {
+        background: #fff4de;
+        border-left: 4px solid var(--amber);
+      }
+      .why {
+        background: #e8eeff;
+        border-left: 4px solid var(--cobalt);
+      }
+
+      /* Schedule (dark, three columns) */
+      .day-card {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 1.3rem;
+        padding: 1.6rem;
+      }
+      .day-chip {
+        display: inline-block;
+        background: var(--amber);
+        color: var(--navy);
+        font-weight: 800;
+        padding: 0.2rem 0.8rem;
+        border-radius: 999px;
+        margin-bottom: 0.7rem;
+      }
+      .day-card h3 {
+        font-size: 1.4rem;
+        font-weight: 800;
+      }
+      .day-card header p {
+        color: var(--cobalt-l);
+        margin: 0.5rem 0 1rem;
+      }
+      .slots {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .slot {
+        padding: 0.85rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.14);
+      }
+      .slot-time {
+        color: var(--amber);
+        font-weight: 700;
+        font-size: 0.95rem;
+      }
+      .slot-body strong {
+        color: #fff;
+      }
+      .breakout {
+        padding: 0.3rem 0;
+      }
+      .breakout + .breakout {
+        border-top: 1px dashed rgba(255, 255, 255, 0.2);
+      }
+
+      /* Tickets (white) */
+      .price-table {
+        border-radius: 1.1rem;
+        overflow: hidden;
+        border: 1px solid var(--line);
+      }
+      .price-table table {
+        margin: 0;
+        --bs-table-bg: #fff;
+      }
+      .price-table thead th {
+        background: var(--navy);
+        color: #fff;
+        padding: 1rem 1.1rem;
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-weight: 700;
+        vertical-align: middle;
+        min-width: 150px;
+      }
+      .price-table tbody th {
+        padding: 1.1rem;
+        font-weight: 700;
+        min-width: 190px;
+      }
+      .price-table tbody th em {
+        display: block;
+        font-weight: 500;
+        color: var(--muted);
+        font-style: normal;
+        font-size: 0.9rem;
+      }
+      .price-table td {
+        padding: 1.1rem;
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: 1.25rem;
+        color: var(--cobalt-d);
+        white-space: nowrap;
+      }
+      .inclusions {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .inclusions li {
+        display: flex;
+        gap: 0.8rem;
+        padding: 0.55rem 0;
+      }
+      .inclusions i {
+        color: var(--cobalt);
+        font-size: 1.15rem;
+      }
+
+      /* Venue + contact (dark) */
+      .tbc {
+        font-family: "Schibsted Grotesk", sans-serif;
+        font-weight: 800;
+        font-size: clamp(3rem, 9vw, 6rem);
+        color: var(--amber);
+        line-height: 1;
+      }
+      .contact-row {
+        display: flex;
+        gap: 1rem;
+        padding: 1.2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+      }
+      .contact-row i {
+        font-size: 1.5rem;
+        color: var(--amber);
+      }
+      .contact-row a {
+        color: var(--cobalt-l);
+        font-weight: 600;
+        word-break: break-word;
+      }
+      footer {
+        background: #040b1a;
+        color: rgba(255, 255, 255, 0.72);
+        padding: 2rem 0;
+      }
+      footer a {
+        color: var(--cobalt-l);
+      }
+    </style>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-offset="100"
+    tabindex="0"
+  >
+    <nav
+      class="navbar navbar-expand-lg sticky-top py-2"
+      id="mainNav"
+      aria-label="Main navigation"
+    >
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#home">
+          <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true">
+            <rect width="34" height="34" rx="9" fill="#3D6BFF" />
+            <path
+              d="M10 6c0 8 14 8 14 16s-14 8-14 6M24 6c0 8-14 8-14 16"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.4"
+              stroke-linecap="round"
+            />
+            <path
+              d="M12 11h10M12 17h10M12 23h10"
+              stroke="#FFB84A"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span class="brand-name">GeneX 2027</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#overview">Overview</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#leadership">Leadership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#topics">Key Topics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tickets">Tickets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#venue">Venue &amp; Contact</a>
+            </li>
+          </ul>
+          <a class="btn btn-cobalt mt-2 mt-lg-0" href="#tickets">Register</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="home">
+      <svg
+        class="hero-bg"
+        viewBox="0 0 1600 900"
+        preserveAspectRatio="xMidYMid slice"
+        aria-hidden="true"
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <defs>
+          <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#050E22" />
+            <stop offset=".55" stop-color="#0A1F4A" />
+            <stop offset="1" stop-color="#10307A" />
+          </linearGradient>
+          <radialGradient id="glow" cx=".78" cy=".35" r=".6">
+            <stop offset="0" stop-color="#3D6BFF" stop-opacity=".38" />
+            <stop offset="1" stop-color="#3D6BFF" stop-opacity="0" />
+          </radialGradient>
+          <radialGradient id="glow2" cx=".1" cy=".9" r=".5">
+            <stop offset="0" stop-color="#FFB84A" stop-opacity=".16" />
+            <stop offset="1" stop-color="#FFB84A" stop-opacity="0" />
+          </radialGradient>
+          <pattern
+            id="dots"
+            width="36"
+            height="36"
+            patternUnits="userSpaceOnUse"
+          >
+            <circle cx="2" cy="2" r="1.2" fill="#BFD0FF" fill-opacity=".12" />
+          </pattern>
+        </defs>
+        <rect width="1600" height="900" fill="url(#hg)" />
+        <rect width="1600" height="900" fill="url(#dots)" />
+        <rect width="1600" height="900" fill="url(#glow)" />
+        <rect width="1600" height="900" fill="url(#glow2)" />
+        <g transform="translate(0 0) rotate(12 800 450)">
+          <line
+            x1="-100.0"
+            y1="608.4"
+            x2="-100.0"
+            y2="291.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.23"
+            stroke-width="2"
+          />
+          <circle
+            cx="-100.0"
+            cy="608.4"
+            r="4.1"
+            fill="#6C8DFF"
+            fill-opacity="0.53"
+          />
+          <circle
+            cx="-100.0"
+            cy="291.6"
+            r="4.1"
+            fill="#FFB84A"
+            fill-opacity="0.45"
+          />
+          <line
+            x1="-60.9"
+            y1="619.9"
+            x2="-60.9"
+            y2="280.1"
+            stroke="#BFD0FF"
+            stroke-opacity="0.11"
+            stroke-width="2"
+          />
+          <circle
+            cx="-60.9"
+            cy="619.9"
+            r="3.1"
+            fill="#6C8DFF"
+            fill-opacity="0.37"
+          />
+          <circle
+            cx="-60.9"
+            cy="280.1"
+            r="3.1"
+            fill="#FFB84A"
+            fill-opacity="0.27"
+          />
+          <line
+            x1="-21.7"
+            y1="603.2"
+            x2="-21.7"
+            y2="296.8"
+            stroke="#BFD0FF"
+            stroke-opacity="0.25"
+            stroke-width="2"
+          />
+          <circle
+            cx="-21.7"
+            cy="603.2"
+            r="4.3"
+            fill="#6C8DFF"
+            fill-opacity="0.57"
+          />
+          <circle
+            cx="-21.7"
+            cy="296.8"
+            r="4.3"
+            fill="#FFB84A"
+            fill-opacity="0.49"
+          />
+          <line
+            x1="17.4"
+            y1="561.1"
+            x2="17.4"
+            y2="338.9"
+            stroke="#BFD0FF"
+            stroke-opacity="0.36"
+            stroke-width="2"
+          />
+          <circle
+            cx="17.4"
+            cy="561.1"
+            r="5.3"
+            fill="#6C8DFF"
+            fill-opacity="0.73"
+          />
+          <circle
+            cx="17.4"
+            cy="338.9"
+            r="5.3"
+            fill="#FFB84A"
+            fill-opacity="0.67"
+          />
+          <line
+            x1="56.5"
+            y1="500.6"
+            x2="56.5"
+            y2="399.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.43"
+            stroke-width="2"
+          />
+          <circle
+            cx="56.5"
+            cy="500.6"
+            r="5.9"
+            fill="#6C8DFF"
+            fill-opacity="0.83"
+          />
+          <circle
+            cx="56.5"
+            cy="399.4"
+            r="5.9"
+            fill="#FFB84A"
+            fill-opacity="0.78"
+          />
+          <line
+            x1="95.7"
+            y1="431.8"
+            x2="95.7"
+            y2="468.2"
+            stroke="#BFD0FF"
+            stroke-opacity="0.45"
+            stroke-width="2"
+          />
+          <circle
+            cx="95.7"
+            cy="431.8"
+            r="6.0"
+            fill="#6C8DFF"
+            fill-opacity="0.85"
+          />
+          <circle
+            cx="95.7"
+            cy="468.2"
+            r="6.0"
+            fill="#FFB84A"
+            fill-opacity="0.80"
+          />
+          <line
+            x1="134.8"
+            y1="366.0"
+            x2="134.8"
+            y2="534.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.40"
+            stroke-width="2"
+          />
+          <circle
+            cx="134.8"
+            cy="366.0"
+            r="5.6"
+            fill="#6C8DFF"
+            fill-opacity="0.78"
+          />
+          <circle
+            cx="134.8"
+            cy="534.0"
+            r="5.6"
+            fill="#FFB84A"
+            fill-opacity="0.73"
+          />
+          <line
+            x1="173.9"
+            y1="314.0"
+            x2="173.9"
+            y2="586.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.31"
+            stroke-width="2"
+          />
+          <circle
+            cx="173.9"
+            cy="314.0"
+            r="4.8"
+            fill="#6C8DFF"
+            fill-opacity="0.65"
+          />
+          <circle
+            cx="173.9"
+            cy="586.0"
+            r="4.8"
+            fill="#FFB84A"
+            fill-opacity="0.58"
+          />
+          <line
+            x1="213.0"
+            y1="284.6"
+            x2="213.0"
+            y2="615.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.18"
+            stroke-width="2"
+          />
+          <circle
+            cx="213.0"
+            cy="284.6"
+            r="3.7"
+            fill="#6C8DFF"
+            fill-opacity="0.47"
+          />
+          <circle
+            cx="213.0"
+            cy="615.4"
+            r="3.7"
+            fill="#FFB84A"
+            fill-opacity="0.38"
+          />
+          <line
+            x1="252.2"
+            y1="282.6"
+            x2="252.2"
+            y2="617.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.16"
+            stroke-width="2"
+          />
+          <circle
+            cx="252.2"
+            cy="282.6"
+            r="3.5"
+            fill="#6C8DFF"
+            fill-opacity="0.44"
+          />
+          <circle
+            cx="252.2"
+            cy="617.4"
+            r="3.5"
+            fill="#FFB84A"
+            fill-opacity="0.35"
+          />
+          <line
+            x1="291.3"
+            y1="308.3"
+            x2="291.3"
+            y2="591.7"
+            stroke="#BFD0FF"
+            stroke-opacity="0.29"
+            stroke-width="2"
+          />
+          <circle
+            cx="291.3"
+            cy="308.3"
+            r="4.7"
+            fill="#6C8DFF"
+            fill-opacity="0.63"
+          />
+          <circle
+            cx="291.3"
+            cy="591.7"
+            r="4.7"
+            fill="#FFB84A"
+            fill-opacity="0.55"
+          />
+          <line
+            x1="330.4"
+            y1="357.5"
+            x2="330.4"
+            y2="542.5"
+            stroke="#BFD0FF"
+            stroke-opacity="0.39"
+            stroke-width="2"
+          />
+          <circle
+            cx="330.4"
+            cy="357.5"
+            r="5.5"
+            fill="#6C8DFF"
+            fill-opacity="0.77"
+          />
+          <circle
+            cx="330.4"
+            cy="542.5"
+            r="5.5"
+            fill="#FFB84A"
+            fill-opacity="0.71"
+          />
+          <line
+            x1="369.6"
+            y1="421.9"
+            x2="369.6"
+            y2="478.1"
+            stroke="#BFD0FF"
+            stroke-opacity="0.45"
+            stroke-width="2"
+          />
+          <circle
+            cx="369.6"
+            cy="421.9"
+            r="6.0"
+            fill="#6C8DFF"
+            fill-opacity="0.84"
+          />
+          <circle
+            cx="369.6"
+            cy="478.1"
+            r="6.0"
+            fill="#FFB84A"
+            fill-opacity="0.79"
+          />
+          <line
+            x1="408.7"
+            y1="491.0"
+            x2="408.7"
+            y2="409.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.44"
+            stroke-width="2"
+          />
+          <circle
+            cx="408.7"
+            cy="491.0"
+            r="5.9"
+            fill="#6C8DFF"
+            fill-opacity="0.84"
+          />
+          <circle
+            cx="408.7"
+            cy="409.0"
+            r="5.9"
+            fill="#FFB84A"
+            fill-opacity="0.78"
+          />
+          <line
+            x1="447.8"
+            y1="553.4"
+            x2="447.8"
+            y2="346.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.38"
+            stroke-width="2"
+          />
+          <circle
+            cx="447.8"
+            cy="553.4"
+            r="5.4"
+            fill="#6C8DFF"
+            fill-opacity="0.75"
+          />
+          <circle
+            cx="447.8"
+            cy="346.6"
+            r="5.4"
+            fill="#FFB84A"
+            fill-opacity="0.69"
+          />
+          <line
+            x1="487.0"
+            y1="598.6"
+            x2="487.0"
+            y2="301.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.27"
+            stroke-width="2"
+          />
+          <circle
+            cx="487.0"
+            cy="598.6"
+            r="4.5"
+            fill="#6C8DFF"
+            fill-opacity="0.59"
+          />
+          <circle
+            cx="487.0"
+            cy="301.4"
+            r="4.5"
+            fill="#FFB84A"
+            fill-opacity="0.52"
+          />
+          <line
+            x1="526.1"
+            y1="619.2"
+            x2="526.1"
+            y2="280.8"
+            stroke="#BFD0FF"
+            stroke-opacity="0.13"
+            stroke-width="2"
+          />
+          <circle
+            cx="526.1"
+            cy="619.2"
+            r="3.3"
+            fill="#6C8DFF"
+            fill-opacity="0.40"
+          />
+          <circle
+            cx="526.1"
+            cy="280.8"
+            r="3.3"
+            fill="#FFB84A"
+            fill-opacity="0.30"
+          />
+          <line
+            x1="565.2"
+            y1="611.8"
+            x2="565.2"
+            y2="288.2"
+            stroke="#BFD0FF"
+            stroke-opacity="0.21"
+            stroke-width="2"
+          />
+          <circle
+            cx="565.2"
+            cy="611.8"
+            r="3.9"
+            fill="#6C8DFF"
+            fill-opacity="0.50"
+          />
+          <circle
+            cx="565.2"
+            cy="288.2"
+            r="3.9"
+            fill="#FFB84A"
+            fill-opacity="0.42"
+          />
+          <line
+            x1="604.3"
+            y1="577.6"
+            x2="604.3"
+            y2="322.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.33"
+            stroke-width="2"
+          />
+          <circle
+            cx="604.3"
+            cy="577.6"
+            r="5.0"
+            fill="#6C8DFF"
+            fill-opacity="0.68"
+          />
+          <circle
+            cx="604.3"
+            cy="322.4"
+            r="5.0"
+            fill="#FFB84A"
+            fill-opacity="0.61"
+          />
+          <line
+            x1="643.5"
+            y1="522.3"
+            x2="643.5"
+            y2="377.7"
+            stroke="#BFD0FF"
+            stroke-opacity="0.42"
+            stroke-width="2"
+          />
+          <circle
+            cx="643.5"
+            cy="522.3"
+            r="5.7"
+            fill="#6C8DFF"
+            fill-opacity="0.80"
+          />
+          <circle
+            cx="643.5"
+            cy="377.7"
+            r="5.7"
+            fill="#FFB84A"
+            fill-opacity="0.75"
+          />
+          <line
+            x1="682.6"
+            y1="455.0"
+            x2="682.6"
+            y2="445.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.45"
+            stroke-width="2"
+          />
+          <circle
+            cx="682.6"
+            cy="455.0"
+            r="6.0"
+            fill="#6C8DFF"
+            fill-opacity="0.85"
+          />
+          <circle
+            cx="682.6"
+            cy="445.0"
+            r="6.0"
+            fill="#FFB84A"
+            fill-opacity="0.80"
+          />
+          <line
+            x1="721.7"
+            y1="386.9"
+            x2="721.7"
+            y2="513.1"
+            stroke="#BFD0FF"
+            stroke-opacity="0.42"
+            stroke-width="2"
+          />
+          <circle
+            cx="721.7"
+            cy="386.9"
+            r="5.8"
+            fill="#6C8DFF"
+            fill-opacity="0.81"
+          />
+          <circle
+            cx="721.7"
+            cy="513.1"
+            r="5.8"
+            fill="#FFB84A"
+            fill-opacity="0.76"
+          />
+          <line
+            x1="760.9"
+            y1="329.2"
+            x2="760.9"
+            y2="570.8"
+            stroke="#BFD0FF"
+            stroke-opacity="0.35"
+            stroke-width="2"
+          />
+          <circle
+            cx="760.9"
+            cy="329.2"
+            r="5.1"
+            fill="#6C8DFF"
+            fill-opacity="0.70"
+          />
+          <circle
+            cx="760.9"
+            cy="570.8"
+            r="5.1"
+            fill="#FFB84A"
+            fill-opacity="0.64"
+          />
+          <line
+            x1="800.0"
+            y1="291.6"
+            x2="800.0"
+            y2="608.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.23"
+            stroke-width="2"
+          />
+          <circle
+            cx="800.0"
+            cy="291.6"
+            r="4.1"
+            fill="#6C8DFF"
+            fill-opacity="0.53"
+          />
+          <circle
+            cx="800.0"
+            cy="608.4"
+            r="4.1"
+            fill="#FFB84A"
+            fill-opacity="0.45"
+          />
+          <line
+            x1="839.1"
+            y1="280.1"
+            x2="839.1"
+            y2="619.9"
+            stroke="#BFD0FF"
+            stroke-opacity="0.11"
+            stroke-width="2"
+          />
+          <circle
+            cx="839.1"
+            cy="280.1"
+            r="3.1"
+            fill="#6C8DFF"
+            fill-opacity="0.37"
+          />
+          <circle
+            cx="839.1"
+            cy="619.9"
+            r="3.1"
+            fill="#FFB84A"
+            fill-opacity="0.27"
+          />
+          <line
+            x1="878.3"
+            y1="296.8"
+            x2="878.3"
+            y2="603.2"
+            stroke="#BFD0FF"
+            stroke-opacity="0.25"
+            stroke-width="2"
+          />
+          <circle
+            cx="878.3"
+            cy="296.8"
+            r="4.3"
+            fill="#6C8DFF"
+            fill-opacity="0.57"
+          />
+          <circle
+            cx="878.3"
+            cy="603.2"
+            r="4.3"
+            fill="#FFB84A"
+            fill-opacity="0.49"
+          />
+          <line
+            x1="917.4"
+            y1="338.9"
+            x2="917.4"
+            y2="561.1"
+            stroke="#BFD0FF"
+            stroke-opacity="0.36"
+            stroke-width="2"
+          />
+          <circle
+            cx="917.4"
+            cy="338.9"
+            r="5.3"
+            fill="#6C8DFF"
+            fill-opacity="0.73"
+          />
+          <circle
+            cx="917.4"
+            cy="561.1"
+            r="5.3"
+            fill="#FFB84A"
+            fill-opacity="0.67"
+          />
+          <line
+            x1="956.5"
+            y1="399.4"
+            x2="956.5"
+            y2="500.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.43"
+            stroke-width="2"
+          />
+          <circle
+            cx="956.5"
+            cy="399.4"
+            r="5.9"
+            fill="#6C8DFF"
+            fill-opacity="0.83"
+          />
+          <circle
+            cx="956.5"
+            cy="500.6"
+            r="5.9"
+            fill="#FFB84A"
+            fill-opacity="0.78"
+          />
+          <line
+            x1="995.7"
+            y1="468.2"
+            x2="995.7"
+            y2="431.8"
+            stroke="#BFD0FF"
+            stroke-opacity="0.45"
+            stroke-width="2"
+          />
+          <circle
+            cx="995.7"
+            cy="468.2"
+            r="6.0"
+            fill="#6C8DFF"
+            fill-opacity="0.85"
+          />
+          <circle
+            cx="995.7"
+            cy="431.8"
+            r="6.0"
+            fill="#FFB84A"
+            fill-opacity="0.80"
+          />
+          <line
+            x1="1034.8"
+            y1="534.0"
+            x2="1034.8"
+            y2="366.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.40"
+            stroke-width="2"
+          />
+          <circle
+            cx="1034.8"
+            cy="534.0"
+            r="5.6"
+            fill="#6C8DFF"
+            fill-opacity="0.78"
+          />
+          <circle
+            cx="1034.8"
+            cy="366.0"
+            r="5.6"
+            fill="#FFB84A"
+            fill-opacity="0.73"
+          />
+          <line
+            x1="1073.9"
+            y1="586.0"
+            x2="1073.9"
+            y2="314.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.31"
+            stroke-width="2"
+          />
+          <circle
+            cx="1073.9"
+            cy="586.0"
+            r="4.8"
+            fill="#6C8DFF"
+            fill-opacity="0.65"
+          />
+          <circle
+            cx="1073.9"
+            cy="314.0"
+            r="4.8"
+            fill="#FFB84A"
+            fill-opacity="0.58"
+          />
+          <line
+            x1="1113.0"
+            y1="615.4"
+            x2="1113.0"
+            y2="284.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.18"
+            stroke-width="2"
+          />
+          <circle
+            cx="1113.0"
+            cy="615.4"
+            r="3.7"
+            fill="#6C8DFF"
+            fill-opacity="0.47"
+          />
+          <circle
+            cx="1113.0"
+            cy="284.6"
+            r="3.7"
+            fill="#FFB84A"
+            fill-opacity="0.38"
+          />
+          <line
+            x1="1152.2"
+            y1="617.4"
+            x2="1152.2"
+            y2="282.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.16"
+            stroke-width="2"
+          />
+          <circle
+            cx="1152.2"
+            cy="617.4"
+            r="3.5"
+            fill="#6C8DFF"
+            fill-opacity="0.44"
+          />
+          <circle
+            cx="1152.2"
+            cy="282.6"
+            r="3.5"
+            fill="#FFB84A"
+            fill-opacity="0.35"
+          />
+          <line
+            x1="1191.3"
+            y1="591.7"
+            x2="1191.3"
+            y2="308.3"
+            stroke="#BFD0FF"
+            stroke-opacity="0.29"
+            stroke-width="2"
+          />
+          <circle
+            cx="1191.3"
+            cy="591.7"
+            r="4.7"
+            fill="#6C8DFF"
+            fill-opacity="0.63"
+          />
+          <circle
+            cx="1191.3"
+            cy="308.3"
+            r="4.7"
+            fill="#FFB84A"
+            fill-opacity="0.55"
+          />
+          <line
+            x1="1230.4"
+            y1="542.5"
+            x2="1230.4"
+            y2="357.5"
+            stroke="#BFD0FF"
+            stroke-opacity="0.39"
+            stroke-width="2"
+          />
+          <circle
+            cx="1230.4"
+            cy="542.5"
+            r="5.5"
+            fill="#6C8DFF"
+            fill-opacity="0.77"
+          />
+          <circle
+            cx="1230.4"
+            cy="357.5"
+            r="5.5"
+            fill="#FFB84A"
+            fill-opacity="0.71"
+          />
+          <line
+            x1="1269.6"
+            y1="478.1"
+            x2="1269.6"
+            y2="421.9"
+            stroke="#BFD0FF"
+            stroke-opacity="0.45"
+            stroke-width="2"
+          />
+          <circle
+            cx="1269.6"
+            cy="478.1"
+            r="6.0"
+            fill="#6C8DFF"
+            fill-opacity="0.84"
+          />
+          <circle
+            cx="1269.6"
+            cy="421.9"
+            r="6.0"
+            fill="#FFB84A"
+            fill-opacity="0.79"
+          />
+          <line
+            x1="1308.7"
+            y1="409.0"
+            x2="1308.7"
+            y2="491.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.44"
+            stroke-width="2"
+          />
+          <circle
+            cx="1308.7"
+            cy="409.0"
+            r="5.9"
+            fill="#6C8DFF"
+            fill-opacity="0.84"
+          />
+          <circle
+            cx="1308.7"
+            cy="491.0"
+            r="5.9"
+            fill="#FFB84A"
+            fill-opacity="0.78"
+          />
+          <line
+            x1="1347.8"
+            y1="346.6"
+            x2="1347.8"
+            y2="553.4"
+            stroke="#BFD0FF"
+            stroke-opacity="0.38"
+            stroke-width="2"
+          />
+          <circle
+            cx="1347.8"
+            cy="346.6"
+            r="5.4"
+            fill="#6C8DFF"
+            fill-opacity="0.75"
+          />
+          <circle
+            cx="1347.8"
+            cy="553.4"
+            r="5.4"
+            fill="#FFB84A"
+            fill-opacity="0.69"
+          />
+          <line
+            x1="1387.0"
+            y1="301.4"
+            x2="1387.0"
+            y2="598.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.27"
+            stroke-width="2"
+          />
+          <circle
+            cx="1387.0"
+            cy="301.4"
+            r="4.5"
+            fill="#6C8DFF"
+            fill-opacity="0.59"
+          />
+          <circle
+            cx="1387.0"
+            cy="598.6"
+            r="4.5"
+            fill="#FFB84A"
+            fill-opacity="0.52"
+          />
+          <line
+            x1="1426.1"
+            y1="280.8"
+            x2="1426.1"
+            y2="619.2"
+            stroke="#BFD0FF"
+            stroke-opacity="0.13"
+            stroke-width="2"
+          />
+          <circle
+            cx="1426.1"
+            cy="280.8"
+            r="3.3"
+            fill="#6C8DFF"
+            fill-opacity="0.40"
+          />
+          <circle
+            cx="1426.1"
+            cy="619.2"
+            r="3.3"
+            fill="#FFB84A"
+            fill-opacity="0.30"
+          />
+          <line
+            x1="1465.2"
+            y1="288.2"
+            x2="1465.2"
+            y2="611.8"
+            stroke="#BFD0FF"
+            stroke-opacity="0.21"
+            stroke-width="2"
+          />
+          <circle
+            cx="1465.2"
+            cy="288.2"
+            r="3.9"
+            fill="#6C8DFF"
+            fill-opacity="0.50"
+          />
+          <circle
+            cx="1465.2"
+            cy="611.8"
+            r="3.9"
+            fill="#FFB84A"
+            fill-opacity="0.42"
+          />
+          <line
+            x1="1504.3"
+            y1="322.4"
+            x2="1504.3"
+            y2="577.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.33"
+            stroke-width="2"
+          />
+          <circle
+            cx="1504.3"
+            cy="322.4"
+            r="5.0"
+            fill="#6C8DFF"
+            fill-opacity="0.68"
+          />
+          <circle
+            cx="1504.3"
+            cy="577.6"
+            r="5.0"
+            fill="#FFB84A"
+            fill-opacity="0.61"
+          />
+          <line
+            x1="1543.5"
+            y1="377.7"
+            x2="1543.5"
+            y2="522.3"
+            stroke="#BFD0FF"
+            stroke-opacity="0.42"
+            stroke-width="2"
+          />
+          <circle
+            cx="1543.5"
+            cy="377.7"
+            r="5.7"
+            fill="#6C8DFF"
+            fill-opacity="0.80"
+          />
+          <circle
+            cx="1543.5"
+            cy="522.3"
+            r="5.7"
+            fill="#FFB84A"
+            fill-opacity="0.75"
+          />
+          <line
+            x1="1582.6"
+            y1="445.0"
+            x2="1582.6"
+            y2="455.0"
+            stroke="#BFD0FF"
+            stroke-opacity="0.45"
+            stroke-width="2"
+          />
+          <circle
+            cx="1582.6"
+            cy="445.0"
+            r="6.0"
+            fill="#6C8DFF"
+            fill-opacity="0.85"
+          />
+          <circle
+            cx="1582.6"
+            cy="455.0"
+            r="6.0"
+            fill="#FFB84A"
+            fill-opacity="0.80"
+          />
+          <line
+            x1="1621.7"
+            y1="513.1"
+            x2="1621.7"
+            y2="386.9"
+            stroke="#BFD0FF"
+            stroke-opacity="0.42"
+            stroke-width="2"
+          />
+          <circle
+            cx="1621.7"
+            cy="513.1"
+            r="5.8"
+            fill="#6C8DFF"
+            fill-opacity="0.81"
+          />
+          <circle
+            cx="1621.7"
+            cy="386.9"
+            r="5.8"
+            fill="#FFB84A"
+            fill-opacity="0.76"
+          />
+          <line
+            x1="1660.9"
+            y1="570.8"
+            x2="1660.9"
+            y2="329.2"
+            stroke="#BFD0FF"
+            stroke-opacity="0.35"
+            stroke-width="2"
+          />
+          <circle
+            cx="1660.9"
+            cy="570.8"
+            r="5.1"
+            fill="#6C8DFF"
+            fill-opacity="0.70"
+          />
+          <circle
+            cx="1660.9"
+            cy="329.2"
+            r="5.1"
+            fill="#FFB84A"
+            fill-opacity="0.64"
+          />
+          <line
+            x1="1700.0"
+            y1="608.4"
+            x2="1700.0"
+            y2="291.6"
+            stroke="#BFD0FF"
+            stroke-opacity="0.23"
+            stroke-width="2"
+          />
+          <circle
+            cx="1700.0"
+            cy="608.4"
+            r="4.1"
+            fill="#6C8DFF"
+            fill-opacity="0.53"
+          />
+          <circle
+            cx="1700.0"
+            cy="291.6"
+            r="4.1"
+            fill="#FFB84A"
+            fill-opacity="0.45"
+          />
+          <path
+            d="M-100.0,608.4 L-88.8,614.6 L-77.5,618.4 L-66.2,620.0 L-55.0,619.1 L-43.8,616.0 L-32.5,610.5 L-21.2,602.8 L-10.0,593.0 L1.2,581.2 L12.5,567.5 L23.8,552.3 L35.0,535.6 L46.2,517.8 L57.5,499.0 L68.8,479.5 L80.0,459.6 L91.2,439.6 L102.5,419.7 L113.8,400.3 L125.0,381.5 L136.2,363.7 L147.5,347.1 L158.8,331.9 L170.0,318.3 L181.2,306.6 L192.5,296.9 L203.8,289.3 L215.0,283.9 L226.2,280.8 L237.5,280.0 L248.8,281.7 L260.0,285.6 L271.2,291.8 L282.5,300.3 L293.8,310.8 L305.0,323.2 L316.2,337.4 L327.5,353.1 L338.8,370.2 L350.0,388.4 L361.2,407.4 L372.5,427.1 L383.8,447.0 L395.0,467.0 L406.2,486.8 L417.5,506.1 L428.8,524.5 L440.0,542.0 L451.2,558.1 L462.5,572.8 L473.8,585.8 L485.0,596.9 L496.2,605.9 L507.5,612.8 L518.8,617.4 L530.0,619.7 L541.2,619.7 L552.5,617.3 L563.8,612.6 L575.0,605.6 L586.2,596.5 L597.5,585.3 L608.8,572.3 L620.0,557.5 L631.2,541.3 L642.5,523.8 L653.8,505.3 L665.0,486.1 L676.2,466.3 L687.5,446.3 L698.8,426.3 L710.0,406.7 L721.2,387.7 L732.5,369.5 L743.8,352.5 L755.0,336.8 L766.2,322.7 L777.5,310.3 L788.8,299.9 L800.0,291.6 L811.2,285.4 L822.5,281.6 L833.8,280.0 L845.0,280.9 L856.2,284.0 L867.5,289.5 L878.8,297.2 L890.0,307.0 L901.2,318.8 L912.5,332.5 L923.8,347.7 L935.0,364.4 L946.2,382.2 L957.5,401.0 L968.8,420.5 L980.0,440.4 L991.2,460.4 L1002.5,480.3 L1013.8,499.7 L1025.0,518.5 L1036.2,536.3 L1047.5,552.9 L1058.8,568.1 L1070.0,581.7 L1081.2,593.4 L1092.5,603.1 L1103.8,610.7 L1115.0,616.1 L1126.2,619.2 L1137.5,620.0 L1148.8,618.3 L1160.0,614.4 L1171.2,608.2 L1182.5,599.7 L1193.8,589.2 L1205.0,576.8 L1216.2,562.6 L1227.5,546.9 L1238.8,529.8 L1250.0,511.6 L1261.2,492.6 L1272.5,472.9 L1283.8,453.0 L1295.0,433.0 L1306.2,413.2 L1317.5,393.9 L1328.8,375.5 L1340.0,358.0 L1351.2,341.9 L1362.5,327.2 L1373.8,314.2 L1385.0,303.1 L1396.2,294.1 L1407.5,287.2 L1418.8,282.6 L1430.0,280.3 L1441.2,280.3 L1452.5,282.7 L1463.8,287.4 L1475.0,294.4 L1486.2,303.5 L1497.5,314.7 L1508.8,327.7 L1520.0,342.5 L1531.2,358.7 L1542.5,376.2 L1553.8,394.7 L1565.0,413.9 L1576.2,433.7 L1587.5,453.7 L1598.8,473.7 L1610.0,493.3 L1621.2,512.3 L1632.5,530.5 L1643.8,547.5 L1655.0,563.2 L1666.2,577.3 L1677.5,589.7 L1688.8,600.1 L1700.0,608.4"
+            fill="none"
+            stroke="#6C8DFF"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-opacity=".85"
+          />
+          <path
+            d="M-100.0,291.6 L-88.8,285.4 L-77.5,281.6 L-66.2,280.0 L-55.0,280.9 L-43.8,284.0 L-32.5,289.5 L-21.2,297.2 L-10.0,307.0 L1.2,318.8 L12.5,332.5 L23.8,347.7 L35.0,364.4 L46.2,382.2 L57.5,401.0 L68.8,420.5 L80.0,440.4 L91.2,460.4 L102.5,480.3 L113.8,499.7 L125.0,518.5 L136.2,536.3 L147.5,552.9 L158.8,568.1 L170.0,581.7 L181.2,593.4 L192.5,603.1 L203.8,610.7 L215.0,616.1 L226.2,619.2 L237.5,620.0 L248.8,618.3 L260.0,614.4 L271.2,608.2 L282.5,599.7 L293.8,589.2 L305.0,576.8 L316.2,562.6 L327.5,546.9 L338.8,529.8 L350.0,511.6 L361.2,492.6 L372.5,472.9 L383.8,453.0 L395.0,433.0 L406.2,413.2 L417.5,393.9 L428.8,375.5 L440.0,358.0 L451.2,341.9 L462.5,327.2 L473.8,314.2 L485.0,303.1 L496.2,294.1 L507.5,287.2 L518.8,282.6 L530.0,280.3 L541.2,280.3 L552.5,282.7 L563.8,287.4 L575.0,294.4 L586.2,303.5 L597.5,314.7 L608.8,327.7 L620.0,342.5 L631.2,358.7 L642.5,376.2 L653.8,394.7 L665.0,413.9 L676.2,433.7 L687.5,453.7 L698.8,473.7 L710.0,493.3 L721.2,512.3 L732.5,530.5 L743.8,547.5 L755.0,563.2 L766.2,577.3 L777.5,589.7 L788.8,600.1 L800.0,608.4 L811.2,614.6 L822.5,618.4 L833.8,620.0 L845.0,619.1 L856.2,616.0 L867.5,610.5 L878.8,602.8 L890.0,593.0 L901.2,581.2 L912.5,567.5 L923.8,552.3 L935.0,535.6 L946.2,517.8 L957.5,499.0 L968.8,479.5 L980.0,459.6 L991.2,439.6 L1002.5,419.7 L1013.8,400.3 L1025.0,381.5 L1036.2,363.7 L1047.5,347.1 L1058.8,331.9 L1070.0,318.3 L1081.2,306.6 L1092.5,296.9 L1103.8,289.3 L1115.0,283.9 L1126.2,280.8 L1137.5,280.0 L1148.8,281.7 L1160.0,285.6 L1171.2,291.8 L1182.5,300.3 L1193.8,310.8 L1205.0,323.2 L1216.2,337.4 L1227.5,353.1 L1238.8,370.2 L1250.0,388.4 L1261.2,407.4 L1272.5,427.1 L1283.8,447.0 L1295.0,467.0 L1306.2,486.8 L1317.5,506.1 L1328.8,524.5 L1340.0,542.0 L1351.2,558.1 L1362.5,572.8 L1373.8,585.8 L1385.0,596.9 L1396.2,605.9 L1407.5,612.8 L1418.8,617.4 L1430.0,619.7 L1441.2,619.7 L1452.5,617.3 L1463.8,612.6 L1475.0,605.6 L1486.2,596.5 L1497.5,585.3 L1508.8,572.3 L1520.0,557.5 L1531.2,541.3 L1542.5,523.8 L1553.8,505.3 L1565.0,486.1 L1576.2,466.3 L1587.5,446.3 L1598.8,426.3 L1610.0,406.7 L1621.2,387.7 L1632.5,369.5 L1643.8,352.5 L1655.0,336.8 L1666.2,322.7 L1677.5,310.3 L1688.8,299.9 L1700.0,291.6"
+            fill="none"
+            stroke="#FFB84A"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-opacity=".75"
+          />
+        </g>
+        <g fill="none" stroke="#BFD0FF" stroke-opacity=".18">
+          <circle cx="1330" cy="170" r="70" />
+          <circle cx="1330" cy="170" r="44" />
+          <circle cx="260" cy="740" r="96" />
+          <circle cx="260" cy="740" r="58" />
+          <circle cx="1180" cy="780" r="34" />
+        </g>
+      </svg>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <h1 class="rise">GeneX Commercialization Summit 2027</h1>
+            <p class="tagline rise d1">
+              Connecting Academic Discovery with Biopharma Scale.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <div class="event-card rise d2">
+              <dl class="mb-0">
+                <dt>
+                  <i class="bi bi-calendar-event" aria-hidden="true"></i>Dates:
+                </dt>
+                <dd>September 20–22, 2027</dd>
+                <dt>
+                  <i class="bi bi-geo-alt" aria-hidden="true"></i>Location:
+                </dt>
+                <dd>Melbourne, Victoria, Australia</dd>
+              </dl>
+              <div class="d-grid gap-2">
+                <a href="#tickets" class="btn btn-amber"
+                  >Registration &amp; Tickets</a
+                ><a href="#contact" class="btn btn-ghost"
+                  >Abstract Submissions</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="band band-light" id="overview">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="h-sec">Executive Welcome &amp; Event Overview</h2>
+            <p class="pull-big">
+              The <strong>GeneX Commercialization Summit 2027</strong> addresses
+              the critical friction points preventing human-led academic genetic
+              research from becoming scalable commercial enterprises.
+            </p>
+          </div>
+          <div class="overview-cols mt-5 mx-auto" style="max-width: 980px">
+            <p>
+              While scientific discovery remains exceptionally strong,
+              translating benchtop genetic platforms into commercial therapies
+              often fails due to complex IP landscapes, biomanufacturing
+              scale-up bottlenecks, intricate regulatory frameworks, and
+              unsustainable pricing models.
+            </p>
+            <p>
+              Over three structured days in Melbourne’s world-class Parkville
+              Biomedical Precinct, GeneX 2027 brings together leaders across
+              genome engineering, technology transfer, regulatory affairs,
+              bioprocessing, and biopharma venture capital to bridge the gap
+              between academic research and commercial application.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band-dark" id="leadership">
+        <div class="container">
+          <h2 class="h-sec mb-5">Conference Leadership</h2>
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 order-lg-2">
+              <div class="portrait">
+                <!-- <svg
+                  class="chair-photo"
+                  viewBox="0 0 400 400"
+                  role="img"
+                  aria-label="Portrait of Prof. John Rasko AO FTSE FAHMS"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#123A5E" />
+                      <stop offset="1" stop-color="#0E6B73" />
+                    </linearGradient>
+                    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0" stop-color="#1B2F4D" />
+                      <stop offset="1" stop-color="#0B1B30" />
+                    </linearGradient>
+                    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#E9C3A4" />
+                      <stop offset="1" stop-color="#D3A582" />
+                    </linearGradient>
+                    <clipPath id="pclip">
+                      <rect width="400" height="400" rx="28" />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#pclip)">
+                    <rect width="400" height="400" fill="url(#pbg)" />
+                    <g
+                      fill="none"
+                      stroke="#8FE3D6"
+                      stroke-opacity=".22"
+                      stroke-width="2"
+                    >
+                      <circle cx="330" cy="70" r="46" />
+                      <circle cx="330" cy="70" r="26" />
+                      <circle cx="60" cy="120" r="22" />
+                      <path d="M20 330 Q 70 290 120 330 T 220 330" />
+                      <path d="M20 350 Q 70 310 120 350 T 220 350" />
+                    </g>
+                    shoulders / suit
+                    <path
+                      d="M30 420 C 40 330 110 300 200 296 C 290 300 360 330 370 420 Z"
+                      fill="url(#suit)"
+                    />
+                    shirt + tie
+                    <path d="M165 298 L200 352 L235 298 Z" fill="#F4F7FA" />
+                    <path
+                      d="M192 330 L208 330 L214 400 L186 400 Z"
+                      fill="#19B3A6"
+                    />
+                    <path d="M200 312 L190 332 L210 332 Z" fill="#128F85" />
+                    lapels
+                    <path
+                      d="M165 298 L200 352 L150 420 L110 420 C 112 360 130 318 165 298 Z"
+                      fill="#14253F"
+                    />
+                    <path
+                      d="M235 298 L200 352 L250 420 L290 420 C 288 360 270 318 235 298 Z"
+                      fill="#14253F"
+                    />
+                    neck
+                    <path
+                      d="M172 262 L172 304 Q 200 326 228 304 L228 262 Z"
+                      fill="#C79570"
+                    />
+                    head
+                    <ellipse
+                      cx="200"
+                      cy="205"
+                      rx="62"
+                      ry="76"
+                      fill="url(#skin)"
+                    />
+                    <ellipse cx="139" cy="212" rx="9" ry="16" fill="#D3A582" />
+                    <ellipse cx="261" cy="212" rx="9" ry="16" fill="#D3A582" />
+                    hair
+                    <path
+                      d="M140 190 C 136 130 170 118 200 118 C 232 118 266 130 260 190 C 252 162 236 148 200 148 C 164 148 148 162 140 190 Z"
+                      fill="#B9BEC6"
+                    />
+                    brows, eyes
+                    <path
+                      d="M165 188 Q 177 181 189 187"
+                      stroke="#8D949E"
+                      stroke-width="5"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M211 187 Q 223 181 235 188"
+                      stroke="#8D949E"
+                      stroke-width="5"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <ellipse cx="177" cy="204" rx="6" ry="4.5" fill="#23324A" />
+                    <ellipse cx="223" cy="204" rx="6" ry="4.5" fill="#23324A" />
+                    glasses
+                    <g fill="none" stroke="#10213A" stroke-width="3.5">
+                      <rect x="155" y="192" width="44" height="30" rx="12" />
+                      <rect x="201" y="192" width="44" height="30" rx="12" />
+                      <path d="M199 205 H201" />
+                    </g>
+                    nose + smile
+                    <path
+                      d="M200 208 Q 194 232 202 238"
+                      stroke="#B98A66"
+                      stroke-width="3.5"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M178 254 Q 200 270 222 254"
+                      stroke="#8A5A45"
+                      stroke-width="4.5"
+                      fill="none"
+                      stroke-linecap="round"
+                    />
+                  </g>
+                </svg> -->
+                <img src="img/conf-chair.jpeg" class="chair-photo" alt="">
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <h3 class="h5 chair-label mb-2">Conference Chair</h3>
+              <h3 class="chair-name">Prof. John Rasko AO FTSE FAHMS</h3>
+              <p class="chair-title">
+                Head, Gene and Stem Cell Therapy Program; Head of Department,
+                Cell and Molecular Therapies, The Centenary Institute
+              </p>
+              <p>
+                Prof. Rasko AO is an Australian pioneer in the application of
+                adult stem cells and genetic therapy. He is a clinical
+                haematologist, pathologist, and scientist who has contributed
+                significantly to the understanding of stem cells and
+                haemopoiesis, gene transfer technologies, oncogenesis, human
+                aminoacidurias, and non-coding RNAs.
+              </p>
+              <h4 class="h5 fw-bold text-white mt-4 mb-3">
+                Key Appointments &amp; Leadership Roles:
+              </h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="role-card h-100">
+                    <strong>Chair, GTTAC:</strong> Gene Technology Technical
+                    Advisory Committee (responsible for all Australian
+                    genetically-modified organisms)
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="role-card h-100">
+                    <strong>Chair, Advisory Committee on Biologicals:</strong>
+                    Therapeutic Goods Administration (TGA)
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="role-card h-100">
+                    <strong>Co-Founder &amp; Past-President:</strong>
+                    Australasian Gene Therapy Society (2003–2005)
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="role-card h-100">
+                    <strong>Vice President:</strong> International Society for
+                    Cellular Therapy (2008–2012)
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="role-card h-100">
+                    <strong>Recipient:</strong> Multiple national (RCPA, RACP,
+                    ASBMB) and international medical research awards
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band-light" id="topics">
+        <div class="container">
+          <h2 class="h-sec mb-5">10 Key Topics &amp; Detailed Focus Areas</h2>
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <div
+                class="nav nav-pills flex-column topic-nav"
+                role="tablist"
+                aria-label="Key topics"
+              >
+                <button
+                  class="nav-link active"
+                  id="tp1-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp1"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp1"
+                  aria-selected="true"
+                >
+                  <span class="tn">1</span
+                  ><span class="tt"
+                    >Intellectual Property (IP) Strategy &amp; Spin-Off
+                    Mechanics</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp2-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp2"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp2"
+                  aria-selected="false"
+                >
+                  <span class="tn">2</span
+                  ><span class="tt"
+                    >Preclinical-to-Clinical Regulatory Pathways</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp3-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp3"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp3"
+                  aria-selected="false"
+                >
+                  <span class="tn">3</span
+                  ><span class="tt"
+                    >Commercialization Models &amp; Health Economics</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp4-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp4"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp4"
+                  aria-selected="false"
+                >
+                  <span class="tn">4</span
+                  ><span class="tt"
+                    >Advanced Biomanufacturing &amp; Scalability (CMC)</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp5-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp5"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp5"
+                  aria-selected="false"
+                >
+                  <span class="tn">5</span
+                  ><span class="tt"
+                    >Venture Capital, Investment &amp; Deal Structuring</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp6-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp6"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp6"
+                  aria-selected="false"
+                >
+                  <span class="tn">6</span
+                  ><span class="tt"
+                    >Bioethics, Governance &amp; Public Trust</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp7-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp7"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp7"
+                  aria-selected="false"
+                >
+                  <span class="tn">7</span
+                  ><span class="tt"
+                    >Next-Generation Gene Editing Platforms</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp8-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp8"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp8"
+                  aria-selected="false"
+                >
+                  <span class="tn">8</span
+                  ><span class="tt"
+                    >Supply Chain, Logistics &amp; Clinical Integration</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp9-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp9"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp9"
+                  aria-selected="false"
+                >
+                  <span class="tn">9</span
+                  ><span class="tt"
+                    >Academic-Industry Ecosystem Collaboration</span
+                  ></button
+                ><button
+                  class="nav-link"
+                  id="tp10-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#tp10"
+                  type="button"
+                  role="tab"
+                  aria-controls="tp10"
+                  aria-selected="false"
+                >
+                  <span class="tn">10</span
+                  ><span class="tt"
+                    >Indication Expansion Beyond Monogenic Rare Diseases</span
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="tab-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="tp1"
+                  role="tabpanel"
+                  aria-labelledby="tp1-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">1</div>
+                    <h3>
+                      Intellectual Property (IP) Strategy &amp; Spin-Off
+                      Mechanics
+                    </h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Patentability of Genetic Vectors:</strong>
+                        Securing robust IP protection for modified viral vectors
+                        (AAVs, lentiviruses) vs. target gene constructs.
+                      </li>
+                      <li>
+                        <strong>Freedom to Operate (FTO) Analyses:</strong>
+                        Navigating complex global patent landscapes around core
+                        CRISPR/Cas9, base editing, and prime editing systems.
+                      </li>
+                      <li>
+                        <strong>University Technology Transfer:</strong>
+                        Structuring spin-off equity, exclusive vs. non-exclusive
+                        licenses, and anti-dilution clauses between academic
+                        institutions and founder scientists.
+                      </li>
+                      <li>
+                        <strong>Defensive Patent Thickets:</strong> Building
+                        patent portfolios around delivery systems, formulations,
+                        and novel manufacturing pathways.
+                      </li>
+                      <li>
+                        <strong>Trade Secret Protection:</strong> Balancing
+                        public academic publication pressures with proprietary
+                        manufacturing processes and bioengineering know-how.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> CRISPR technology patent
+                          battles between UC Berkeley and the Broad Institute
+                          demonstrated that a single ambiguity in university
+                          technology licensing can delay multi-billion dollar
+                          clinical developments by years.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Academic founders
+                          frequently publish data before filing provisional
+                          patents, permanently destroying commercial
+                          patentability. Delegates must learn how to protect
+                          biological IP (like vectors and gRNAs) before entering
+                          the public domain.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp2"
+                  role="tabpanel"
+                  aria-labelledby="tp2-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">2</div>
+                    <h3>Preclinical-to-Clinical Regulatory Pathways</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Accelerated Approval Mechanisms:</strong>
+                        Leveraging TGA provisional approvals (Australia), FDA
+                        Breakthrough/RMAT designations (US), and EMA PRIME
+                        frameworks (EU).
+                      </li>
+                      <li>
+                        <strong
+                          >Good Laboratory Practice (GLP)
+                          Biodistribution:</strong
+                        >
+                        Designing preclinical animal models to demonstrate
+                        on-target cell tropism and lack of off-target toxicity.
+                      </li>
+                      <li>
+                        <strong>Adaptive Clinical Trial Design:</strong>
+                        Structuring small-cohort, Phase I/II master protocols
+                        for rare monogenic diseases where standard placebo arms
+                        are unviable.
+                      </li>
+                      <li>
+                        <strong
+                          >Immunogenicity &amp; Off-Target Profiling:</strong
+                        >
+                        Meeting global regulatory standards for vector immunity
+                        and genomic integrity post-editing.
+                      </li>
+                      <li>
+                        <strong>Harmonization Across Jurisdictions:</strong>
+                        Managing multi-region IND/CTA filings for international,
+                        multi-center gene therapy clinical trials.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> According to clinical
+                          trial statistics, over 80% of novel biotech platforms
+                          fail during the transition from animal models to Phase
+                          I trials due to unpredicted off-target toxicity or
+                          immunogenicity.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Regulatory agencies
+                          like the FDA, EMA, and Australia&#x27;s TGA require
+                          complex, non-traditional trial designs for gene
+                          therapies. Understanding accelerated designations
+                          (such as RMAT or PRIME) cuts years off development
+                          timelines.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp3"
+                  role="tabpanel"
+                  aria-labelledby="tp3-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">3</div>
+                    <h3>Commercialization Models &amp; Health Economics</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Value-Based &amp; Installment Pricing:</strong>
+                        Developing non-traditional reimbursement models for
+                        single-dose, curative gene therapies.
+                      </li>
+                      <li>
+                        <strong>Payer &amp; HTA Strategy:</strong> Conducting
+                        Health Technology Assessments (HTA) to demonstrate
+                        long-term quality-adjusted life-year (QALY) gains to
+                        national insurers.
+                      </li>
+                      <li>
+                        <strong>Orphan Drug Commercialization:</strong>
+                        Designing lean, targeted commercial sales forces and
+                        specialized center-of-excellence delivery networks.
+                      </li>
+                      <li>
+                        <strong>Risk-Sharing Agreements:</strong> Structuring
+                        outcome-contingent rebates between biopharma firms and
+                        public healthcare bodies (e.g., Australian PBS, US
+                        Medicare).
+                      </li>
+                      <li>
+                        <strong>Cross-Subsidization Strategies:</strong>
+                        Balancing ultra-rare pediatric indications with larger,
+                        polygenic adult therapeutic markets to maintain
+                        portfolio solvency.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> Early gene therapies like
+                          Glybera were commercially withdrawn from the market
+                          despite scientific efficacy because their single-dose
+                          $1 million+ upfront price tag was rejected by health
+                          insurers.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Gene therapies cure
+                          diseases in a single dose, which eliminates the
+                          recurring-revenue model traditional pharma relies on.
+                          Business leaders must master value-based annuity
+                          payments and risk-sharing models to survive.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp4"
+                  role="tabpanel"
+                  aria-labelledby="tp4-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">4</div>
+                    <h3>Advanced Biomanufacturing &amp; Scalability (CMC)</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Viral Vector Yield Optimization:</strong>
+                        Transitioning from academic adherent cell culture flasks
+                        to industrial suspension bioreactors.
+                      </li>
+                      <li>
+                        <strong>Non-Viral Delivery Innovations:</strong>
+                        Commercializing Lipid Nanoparticles (LNPs) and novel
+                        polymeric carriers to bypass viral vector shortages.
+                      </li>
+                      <li>
+                        <strong>Autologous vs. Allogeneic Scaling:</strong>
+                        Managing the high cost and logistical complexity of
+                        patient-specific therapies vs. off-the-shelf donor
+                        lines.
+                      </li>
+                      <li>
+                        <strong>Analytical Assay Development:</strong>
+                        Standardizing lot-release assays for viral full-to-empty
+                        capsid ratios and vector genome potency.
+                      </li>
+                      <li>
+                        <strong>cGMP Compliance &amp; CDMO Selection:</strong>
+                        Deciding when to build internal GMP facilities vs.
+                        outsourcing to Contract Development and Manufacturing
+                        Organizations.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> Chemistry, Manufacturing,
+                          and Controls (CMC) issues cause over 50% of regulatory
+                          holds and trial delays in gene therapy clinical
+                          filings.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Moving a viral vector
+                          from an academic laboratory flask into an industrial
+                          2,000-Liter suspension bioreactor frequently alters
+                          the purity and potency of the biological product,
+                          risking total trial failure if not managed early.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp5"
+                  role="tabpanel"
+                  aria-labelledby="tp5-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">5</div>
+                    <h3>Venture Capital, Investment &amp; Deal Structuring</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Academic Seed &amp; Series A Pitching:</strong>
+                        Translating complex genomic mechanisms into commercial
+                        value propositions, market sizing, and milestone
+                        roadmaps.
+                      </li>
+                      <li>
+                        <strong>Non-Dilutive Grant Leveraging:</strong>
+                        Combining government funding (e.g., MRFF, NHMRC, NIH)
+                        with early-stage venture capital.
+                      </li>
+                      <li>
+                        <strong>Corporate Venture Capital (CVC):</strong>
+                        Partnering with major pharmaceutical venture arms early
+                        in academic discovery phases.
+                      </li>
+                      <li>
+                        <strong>Valuation &amp; De-Risking Milestones:</strong>
+                        Setting scientific valuation inflection points (in vivo
+                        proof-of-concept, IND clearance, Phase I safety).
+                      </li>
+                      <li>
+                        <strong>Strategic Licensing &amp; M&amp;A:</strong>
+                        Negotiating option agreements, co-development deals, and
+                        buyout terms with global biopharma players.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> Global venture capital
+                          investment in gene editing and cell therapies exceeds
+                          billions annually, but less than 5% of university
+                          spin-off proposals successfully secure Series A
+                          funding.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Academics often pitch
+                          scientific novelty rather than market size, regulatory
+                          milestones, and risk-mitigation strategies. This topic
+                          teaches researchers how to pitch in terms biopharma
+                          investors evaluate.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp6"
+                  role="tabpanel"
+                  aria-labelledby="tp6-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">6</div>
+                    <h3>Bioethics, Governance &amp; Public Trust</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong
+                          >Somatic vs. Germline Editing Boundaries:</strong
+                        >
+                        Navigating international scientific consensus and
+                        regulatory prohibitions on inherited genetic
+                        modifications.
+                      </li>
+                      <li>
+                        <strong
+                          >Global Health Equity &amp; Pricing Access:</strong
+                        >
+                        Addressing disparities in providing million-dollar gene
+                        therapies to low- and middle-income countries.
+                      </li>
+                      <li>
+                        <strong>Informed Consent in Genetic Trials:</strong>
+                        Structuring long-term trial follow-ups (up to 15 years)
+                        for permanent genetic changes.
+                      </li>
+                      <li>
+                        <strong>Data Privacy &amp; Genomic Biobanks:</strong>
+                        Managing patient privacy, genomic data ownership, and
+                        secondary research rights in commercial database
+                        partnerships.
+                      </li>
+                      <li>
+                        <strong
+                          >Combatting Direct-to-Consumer Unregulated
+                          Therapies:</strong
+                        >
+                        Protecting market integrity against non-evidence-based
+                        cell and gene clinics.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> Regulatory crackdowns on
+                          unregulated stem cell clinics and public pushback
+                          against gene editing demonstrate that ethical missteps
+                          can trigger restrictive legislation that freezes whole
+                          sub-fields of research.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Navigating somatic
+                          versus germline boundaries and resolving genomic data
+                          privacy concerns are required to maintain the social
+                          license to operate and secure long-term public and
+                          institutional funding.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp7"
+                  role="tabpanel"
+                  aria-labelledby="tp7-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">7</div>
+                    <h3>Next-Generation Gene Editing Platforms</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Base &amp; Prime Editing Platforms:</strong>
+                        Moving beyond double-stranded DNA breaks to precise
+                        single-nucleotide corrections without donor DNA.
+                      </li>
+                      <li>
+                        <strong>Epigenetic Editing:</strong> Commercializing
+                        gene silencing and activation approaches that alter
+                        expression without modifying underlying DNA sequences.
+                      </li>
+                      <li>
+                        <strong>In Vivo Gene Editing:</strong> Transitioning
+                        from expensive ex vivo cell manipulation to direct
+                        patient administration.
+                      </li>
+                      <li>
+                        <strong>Multiplex Genome Engineering:</strong>
+                        Simultaneously knocking out or inserting multiple genes
+                        for complex biological targets (e.g., universal CAR-T
+                        cells).
+                      </li>
+                      <li>
+                        <strong>AI-Guided Guide RNA (gRNA) Design:</strong>
+                        Utilizing machine learning models to predict on-target
+                        efficiency and minimize off-target genomic cleavage.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> The global CRISPR and
+                          next-generation gene-editing market is projected to
+                          expand significantly over the next decade.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Standard CRISPR-Cas9
+                          creates double-stranded DNA breaks, which carry risks
+                          of large genomic deletions. Newer platforms like base
+                          editing, prime editing, and epigenetic editing
+                          represent the incoming wave of commercial investment.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp8"
+                  role="tabpanel"
+                  aria-labelledby="tp8-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">8</div>
+                    <h3>Supply Chain, Logistics &amp; Clinical Integration</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Cryogenic Cold-Chain Logistics:</strong>
+                        Managing ultra-low temperature, uninterrupted supply
+                        chains for live genetic vector products.
+                      </li>
+                      <li>
+                        <strong>Vein-to-Vein Logistics Tracking:</strong>
+                        Ensuring strict chain-of-custody and chain-of-identity
+                        protocols for patient-derived materials in autologous
+                        therapies.
+                      </li>
+                      <li>
+                        <strong>Clinical Site Accreditation:</strong>
+                        Establishing specialized hospital infrastructure and
+                        training medical staff for safe vector administration.
+                      </li>
+                      <li>
+                        <strong>Post-Market Pharmacovigilance:</strong> Building
+                        registry systems to track real-world safety and
+                        long-term durability over multi-decade periods.
+                      </li>
+                      <li>
+                        <strong>Regional Hub Manufacturing:</strong> Setting up
+                        localized biomanufacturing nodes (e.g., Melbourne&#x27;s
+                        Parkville precinct) to serve Asia-Pacific clinical hubs.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> For autologous
+                          (patient-specific) gene therapies, the “vein-to-vein”
+                          supply chain requires harvesting, modifying, and
+                          re-infusing patient cells within tight window
+                          constraints at ultra-low cryogenic temperatures.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> A single failure in
+                          cold-chain logistics or chain-of-custody tracking
+                          destroys the therapeutic batch, wastes hundreds of
+                          thousands of dollars, and directly jeopardizes patient
+                          lives.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp9"
+                  role="tabpanel"
+                  aria-labelledby="tp9-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">9</div>
+                    <h3>Academic-Industry Ecosystem Collaboration</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong>Co-Op Research Centres (CRCs):</strong>
+                        Establishing formal public-private partnerships between
+                        research universities, hospitals, and biotech
+                        enterprises.
+                      </li>
+                      <li>
+                        <strong>Shared Infrastructure Models:</strong> Utilizing
+                        incubators, biofoundries, and core facilities to reduce
+                        capital expenditure for early-stage spin-offs.
+                      </li>
+                      <li>
+                        <strong
+                          >Talent Pipelines &amp; Cross-Disciplinary
+                          Training:</strong
+                        >
+                        Bridging the gap between academic molecular biologists
+                        and commercial bioprocess engineers/executives.
+                      </li>
+                      <li>
+                        <strong
+                          >Proof-of-Concept &amp; Accelerator Funds:</strong
+                        >
+                        Managing institutional venture funds designed to bridge
+                        the “Valley of Death” between paper publication and
+                        startup formation.
+                      </li>
+                      <li>
+                        <strong
+                          >Consortium-Driven Precompetitive Research:</strong
+                        >
+                        Collaborating across competing biotech firms to
+                        standardize vector characterization and safety
+                        benchmarks.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> Regions with dedicated
+                          life-science hubs—such as Boston&#x27;s Kendall Square
+                          or Melbourne&#x27;s Parkville Biomedical
+                          Precinct—generate up to 4x more commercial biotech
+                          spin-offs per research dollar than isolated
+                          institutions.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> High capital costs
+                          make it impossible for early startups to buy their own
+                          equipment. Shared incubators, biofoundries, and
+                          public-private partnerships allow startups to bridge
+                          the “Valley of Death”.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="tp10"
+                  role="tabpanel"
+                  aria-labelledby="tp10-tab"
+                  tabindex="0"
+                >
+                  <div class="topic-panel">
+                    <div class="topic-big">10</div>
+                    <h3>Indication Expansion Beyond Monogenic Rare Diseases</h3>
+                    <ul class="topic-list">
+                      <li>
+                        <strong
+                          >Gene Therapy for Common Cardiovascular
+                          Diseases:</strong
+                        >
+                        Targeting lipid metabolism and cardiac tissue
+                        regeneration in mass-market populations.
+                      </li>
+                      <li>
+                        <strong
+                          >Oncology &amp; Gene-Edited
+                          Immuno-Therapeutics:</strong
+                        >
+                        Developing next-generation CAR-T, CAR-NK, and TCR
+                        therapies for solid tumors.
+                      </li>
+                      <li>
+                        <strong
+                          >Neurodegenerative Target Commercialization:</strong
+                        >
+                        Crossing the blood-brain barrier to treat
+                        Parkinson&#x27;s, Alzheimer&#x27;s, and ALS via viral
+                        and non-viral delivery.
+                      </li>
+                      <li>
+                        <strong
+                          >Metabolic &amp; Age-Related Gene Targets:</strong
+                        >
+                        Commercializing therapies aimed at metabolic disorders,
+                        muscle wasting, and cellular senescence.
+                      </li>
+                      <li>
+                        <strong>Polygenic Risk Score Application:</strong>
+                        Moving from single-gene defects to multi-gene risk
+                        mitigation in preventative health markets.
+                      </li>
+                    </ul>
+                    <div class="row g-3 mt-2">
+                      <div class="col-xl-6">
+                        <div class="proof h-100">
+                          <strong>The Proof:</strong> While early gene therapies
+                          targeted ultra-rare monogenic diseases affecting small
+                          patient populations, the largest growth opportunities
+                          lie in polygenic, common conditions like heart
+                          disease, oncology, and neurodegeneration.
+                        </div>
+                      </div>
+                      <div class="col-xl-6">
+                        <div class="why h-100">
+                          <strong>Why Include It:</strong> Moving beyond niche
+                          markets into broad clinical applications is what
+                          transforms boutique biotechs into multi-billion-dollar
+                          enterprise leaders.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band-dark2" id="schedule">
+        <div class="container">
+          <h2 class="h-sec mb-5">Program Schedule</h2>
+          <div class="row g-4">
+            <div class="col-lg-4">
+              <article class="day-card h-100">
+                <header>
+                  <span class="day-chip">Day 1</span>
+                  <h3>Day 1: Monday, Sep 20, 2027</h3>
+                  <p>
+                    <em
+                      >Focus: Academic IP, Spin-Off Mechanics &amp; Platform
+                      Innovations</em
+                    >
+                  </p>
+                </header>
+                <ul class="slots">
+                  <li class="slot">
+                    <div class="slot-time">08:30 – 09:15 AM</div>
+                    <div class="slot-body">
+                      Registration &amp; Welcome Coffee
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">09:15 – 10:15 AM</div>
+                    <div class="slot-body">
+                      <strong>Opening Keynote:</strong> The Next Decade of
+                      Human-Led Genetic Discovery
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">10:15 – 11:30 AM</div>
+                    <div class="slot-body">
+                      <strong>Panel Discussion:</strong> Unlocking Academic IP —
+                      Best Practices for University Tech Transfer and Founder
+                      Equity
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">11:30 AM – 12:00 PM</div>
+                    <div class="slot-body">
+                      Networking &amp; Exhibition Break
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">12:00 – 01:15 PM</div>
+                    <div class="slot-body">
+                      <div class="breakout">
+                        <strong>Breakout Session A:</strong> Base &amp; Prime
+                        Editing — Beyond Double-Stranded DNA Breaks
+                      </div>
+                      <div class="breakout">
+                        <strong>Breakout Session B:</strong> Freedom to Operate
+                        (FTO) in Complex Vector Landscapes
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">01:15 – 02:30 PM</div>
+                    <div class="slot-body">Networking Lunch</div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">02:30 – 03:45 PM</div>
+                    <div class="slot-body">
+                      <strong>Panel Discussion:</strong> Epigenetic &amp;
+                      Non-Viral Gene Delivery Commercialization
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">03:45 – 05:00 PM</div>
+                    <div class="slot-body">
+                      <strong>Presentation &amp; Case Study:</strong>
+                      Translating Preclinical Academic Proof-of-Concept into
+                      Venture-Ready Spin-Offs
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">05:00 – 07:00 PM</div>
+                    <div class="slot-body">
+                      <strong>Day 1 Networking Reception:</strong> Melbourne
+                      Parkville Biomedical Precinct Walk &amp; Welcome Drinks
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="day-card h-100">
+                <header>
+                  <span class="day-chip">Day 2</span>
+                  <h3>Day 2: Tuesday, Sep 21, 2027</h3>
+                  <p>
+                    <em
+                      >Focus: Regulatory Pathways, Biomanufacturing (CMC) &amp;
+                      Supply Chain</em
+                    >
+                  </p>
+                </header>
+                <ul class="slots">
+                  <li class="slot">
+                    <div class="slot-time">08:30 – 09:00 AM</div>
+                    <div class="slot-body">Morning Coffee &amp; Networking</div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">09:00 – 10:15 AM</div>
+                    <div class="slot-body">
+                      <strong>Keynote Address:</strong> Navigating Global
+                      Regulatory Approvals (TGA, FDA, EMA) for Novel Vectors
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">10:15 – 11:30 AM</div>
+                    <div class="slot-body">
+                      <strong>Panel Discussion:</strong> Bridging the CMC Valley
+                      of Death — Moving from Flasks to 2,000L Bioreactors
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">11:30 AM – 12:00 PM</div>
+                    <div class="slot-body">
+                      Networking &amp; Exhibition Break
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">12:00 – 01:15 PM</div>
+                    <div class="slot-body">
+                      <div class="breakout">
+                        <strong>Breakout Session A:</strong> Vein-to-Vein
+                        Cold-Chain Logistics for Autologous Therapies
+                      </div>
+                      <div class="breakout">
+                        <strong>Breakout Session B:</strong> Establishing
+                        Analytical Potency Assays for GMP Release
+                      </div>
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">01:15 – 02:30 PM</div>
+                    <div class="slot-body">Networking Lunch</div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">02:30 – 03:45 PM</div>
+                    <div class="slot-body">
+                      <strong>Interactive Workshop:</strong> Structuring
+                      Preclinical Studies to Satisfy GLP Off-Target Safety
+                      Profiling
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">03:45 – 05:00 PM</div>
+                    <div class="slot-body">
+                      <strong>Panel Discussion:</strong> CDMO Management vs.
+                      Building Internal GMP Capacity
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">07:00 – 10:00 PM</div>
+                    <div class="slot-body">
+                      <strong>Official Conference Gala Dinner</strong> (CBD
+                      Waterfront Venue)
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-lg-4">
+              <article class="day-card h-100">
+                <header>
+                  <span class="day-chip">Day 3</span>
+                  <h3>Day 3: Wednesday, Sep 22, 2027</h3>
+                  <p>
+                    <em
+                      >Focus: Venture Capital, Health Economics &amp; Market
+                      Expansion</em
+                    >
+                  </p>
+                </header>
+                <ul class="slots">
+                  <li class="slot">
+                    <div class="slot-time">08:30 – 09:00 AM</div>
+                    <div class="slot-body">Morning Coffee &amp; Networking</div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">09:00 – 10:15 AM</div>
+                    <div class="slot-body">
+                      <strong>Venture Capital Panel:</strong> What Life-Science
+                      Investors Look for in Series A Gene Therapy Startups
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">10:15 – 11:30 AM</div>
+                    <div class="slot-body">
+                      <strong>Presentation:</strong> Designing Value-Based
+                      Reimbursement and Installment Models for Curative Gene
+                      Therapies
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">11:30 AM – 12:00 PM</div>
+                    <div class="slot-body">
+                      Networking &amp; Exhibition Break
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">12:00 – 01:15 PM</div>
+                    <div class="slot-body">
+                      <strong>Panel Discussion:</strong> Expanding Beyond
+                      Monogenic Rare Diseases — Cardiovascular, Oncology, and
+                      Polygenic Targets
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">01:15 – 02:30 PM</div>
+                    <div class="slot-body">Networking Lunch</div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">02:30 – 04:00 PM</div>
+                    <div class="slot-body">
+                      <strong>Live Investor Pitch Competition:</strong> 6
+                      Selected Academic Spin-offs Pitch to Global Biopharma
+                      Investors
+                    </div>
+                  </li>
+                  <li class="slot">
+                    <div class="slot-time">04:00 – 04:30 PM</div>
+                    <div class="slot-body">
+                      <strong
+                        >Pitch Competition Winner Announcement &amp; Closing
+                        Remarks</strong
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band-white" id="tickets">
+        <div class="container">
+          <h2 class="h-sec">Registration &amp; Tickets</h2>
+          <h3 class="h4 fw-bold mt-4 mb-3">Ticket Tier Pricing</h3>
+          <div class="price-table table-responsive">
+            <table class="table align-middle">
+              <thead>
+                <tr>
+                  <th scope="col">Pass Type</th>
+                  <th scope="col">Academic &amp; Clinical Pass</th>
+                  <th scope="col">Corporate &amp; Industry Pass</th>
+                  <th scope="col">Investor &amp; VC Pass</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">
+                    Super Early-Bird <em>(Ends March 31, 2027)</em>
+                  </th>
+                  <td>$795 AUD</td>
+                  <td>$1,495 AUD</td>
+                  <td>$1,695 AUD</td>
+                </tr>
+                <tr>
+                  <th scope="row">Early-Bird <em>(Ends July 31, 2027)</em></th>
+                  <td>$995 AUD</td>
+                  <td>$1,795 AUD</td>
+                  <td>$1,995 AUD</td>
+                </tr>
+                <tr>
+                  <th scope="row">Standard Rate</th>
+                  <td>$1,295 AUD</td>
+                  <td>$2,195 AUD</td>
+                  <td>$2,395 AUD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-8">
+              <h3 class="h4 fw-bold mb-3">Pass Inclusions</h3>
+              <ul class="inclusions">
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  ><span
+                    >Full 3-day access to all keynotes, panels, and breakout
+                    tracks.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  ><span
+                    >Access to the official Event Networking App &amp; B2B
+                    Matchmaking Tool.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  ><span
+                    >All daily catering (Morning Tea, Lunch, Afternoon
+                    Tea).</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  ><span
+                    >Ticket to Day 1 Networking Reception
+                    <em
+                      >(Gala Dinner ticket add-on available during checkout)</em
+                    >.</span
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill" aria-hidden="true"></i
+                  ><span
+                    >Access to post-conference presentation slide decks and
+                    session video recordings.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band band-dark" id="venue">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <h2 class="h-sec">Venue &amp; Logistics</h2>
+              <h3 class="h4 fw-bold mt-4 mb-3">Location</h3>
+              <div class="tbc">TBC</div>
+            </div>
+            <div class="col-lg-7" id="contact">
+              <h2 class="h-sec mb-4">Contact &amp; Abstract Submissions</h2>
+              <div class="contact-row">
+                <i class="bi bi-file-earmark-text" aria-hidden="true"></i>
+                <div>
+                  <strong class="text-white">Abstract Submissions:</strong> Now
+                  open for academic poster presentations and the Day 3 Startup
+                  Pitch Competition.
+                  <strong class="text-white">Deadline:</strong> August 15, 2027.
+                </div>
+              </div>
+              <div class="contact-row">
+                <i class="bi bi-envelope" aria-hidden="true"></i>
+                <div>
+                  <strong class="text-white">General Enquiries:</strong><br /><a
+                    href="mailto:info@genexsummit.com.au"
+                    >info@genexsummit.com.au</a
+                  >
+                </div>
+              </div>
+              <div class="contact-row">
+                <i class="bi bi-building" aria-hidden="true"></i>
+                <div>
+                  <strong class="text-white"
+                    >Sponsorship &amp; Exhibition Packages:</strong
+                  ><br /><a href="mailto:sponsors@genexsummit.com.au"
+                    >sponsors@genexsummit.com.au</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between gap-2"
+      >
+        <div>
+          <strong class="text-white"
+            >GeneX Commercialization Summit 2027</strong
+          >
+          — September 20–22, 2027, Melbourne, Victoria, Australia
+        </div>
+        <div>
+          <a href="mailto:info@genexsummit.com.au">info@genexsummit.com.au</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document
+        .querySelectorAll("#navMenu .nav-link, #navMenu .btn")
+        .forEach(function (a) {
+          a.addEventListener("click", function () {
+            var m = document.getElementById("navMenu");
+            if (m.classList.contains("show"))
+              bootstrap.Collapse.getOrCreateInstance(m).hide();
+          });
+        });
+    </script>
+  </body>
+</html>
